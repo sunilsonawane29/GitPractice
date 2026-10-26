@@ -1,0 +1,34 @@
+# 1. Create a project directory and step inside it
+mkdir git-practice-zone
+cd git-practice-zone
+
+# 2. Initialize a blank local Git repository
+git init
+
+# 3. Configure your local identity (if you haven't done it globally)
+git config user.name "Practice User"
+git config user.email "practice@example.com"
+
+# 4. Create your first code file
+echo "print('Hello, Git!')" > main.py
+
+# 5. Check the status of your working tree (should show main.py as untracked)
+git status
+
+# 6. Stage the new file for tracking
+git add main.py
+
+# 7. Commit the staged file into your project repository history
+git commit -m "Initial commit: Add main.py code script"
+
+# 8. Modify the code to practice tracking updates
+echo "print('Git practice makes perfect!')" >> main.py
+
+# 9. View differences between your working tree and the last commit
+git diff
+
+# 10. Stage and commit the updated code change in one shot
+git commit -am "Update main.py with practice message"
+
+# 11. View your project history timeline
+git log --oneline
