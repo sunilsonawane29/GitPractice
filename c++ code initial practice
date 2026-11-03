@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    // Fast I/O
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    // Variables
+    std::string name;
+    int age;
+
+    // Output and Input
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Enter your age: ";
+    std::cin >> age;
+
+    // Conditional Logic
+    std::cout << "\nHello, " << name << "! ";
+    if (age >= 18) {
+        std::cout << "You are an adult.\n";
+    } else {
+        std::cout << "You are a minor.\n";
+    }
+
+    return 0; // Signals successful execution
+}
