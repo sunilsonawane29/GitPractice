@@ -1,0 +1,4 @@
+echo "Student Name: Priya" >> students.txt
+echo "Student Name: Amit" >> students.txt
+git add .
+git commit -m "Add more student records"
