@@ -1,0 +1,3 @@
+echo 'print("Welcome to Student Management System")' > main.py
+git add .
+git commit -m "Add main Python file"
