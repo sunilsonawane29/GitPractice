@@ -1,0 +1,3 @@
+echo "Student Name: Rahul" > students.txt
+git add .
+git commit -m "Add first student details"
