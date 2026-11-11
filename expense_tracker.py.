@@ -1,0 +1,73 @@
+
+# =====================================
+# Personal Expense Tracker
+# Git Practice Project
+# =====================================
+
+from datetime import datetime
+
+expenses = []
+
+
+def add_expense():
+    name = input("Enter expense name: ")
+    amount = float(input("Enter amount: "))
+    category = input("Enter category: ")
+
+    expense = {
+        "name": name,
+        "amount": amount,
+        "category": category,
+        "date": datetime.now().strftime("%Y-%m-%d")
+    }
+
+    expenses.append(expense)
+    print("Expense added successfully!")
+
+
+def show_expenses():
+    if not expenses:
+        print("No expenses recorded.")
+        return
+
+    print("\n--- Your Expenses ---")
+
+    for index, expense in enumerate(expenses, start=1):
+        print(
+            f"{index}. {expense['name']} | "
+            f"₹{expense['amount']} | "
+            f"{expense['category']} | "
+            f"{expense['date']}"
+        )
+
+
+def show_total():
+    total = sum(item["amount"] for item in expenses)
+    print(f"Total expenses: ₹{total:.2f}")
+
+
+def main():
+    while True:
+        print("\n===== EXPENSE TRACKER =====")
+        print("1. Add Expense")
+        print("2. Show Expenses")
+        print("3. Show Total")
+        print("4. Exit")
+
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            add_expense()
+        elif choice == "2":
+            show_expenses()
+        elif choice == "3":
+            show_total()
+        elif choice == "4":
+            print("Thank you for using Expense Tracker!")
+            break
+        else:
+            print("Invalid choice. Try again.")
+
+
+if __name__ == "__main__":
+    main()
