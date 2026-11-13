@@ -1,0 +1,1 @@
+git commit -m "Implement preorder traversal using stack" -m "Introduce a stack-based approach to traverse the binary tree without recursion. Use the LIFO property of the stack to control node processing order."
