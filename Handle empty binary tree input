@@ -1,0 +1,1 @@
+git commit -m "Handle empty binary tree input" -m "Add an early return condition when the root node is null. Return an empty list when the binary tree contains no nodes."
