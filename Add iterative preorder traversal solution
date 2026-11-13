@@ -1,0 +1,1 @@
+git commit -m "Add iterative preorder traversal solution" -m "Implement binary tree preorder traversal using an iterative approach. Follow the Root, Left, Right traversal order to collect node values in the expected sequence."
